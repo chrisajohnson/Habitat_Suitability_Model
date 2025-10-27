@@ -11,12 +11,16 @@ This repository contains the data and scripts for generating a basic habitat sui
 ## To run
 * Download Range_shifts.py and Bio_data into common folder
 * Create folders "Suitability" and "Range_maps", these will initially be empty folders
-* Download environmental data ("Envr_data") for Zenodo: instructions coming soon!
-* Open Range_shifts.py and set directory to location with Python script (line 24)
-* Write in species name (line 28) and set "all_sp" to False to run script for a specified species or set "all_sp" to True to run script for all species (line 29)
-* Write in time period (line 32) as a string within quotes (e.g., "2035") and set "all_period" to False to run script for a specified time period or set "all_period" to True to run script for all time periods (line 33)
-* Write in RCP scenario (line 36) and set "all_rcp" to False to run script for a specified RCP scenerio or set "all_rcp" to True to run script for all RCP scenarios (line 37)
-* Run the script, suitability maps are saved in the "Suitability" folder and distribution range maps are saved in the "Range_maps" folder
+* Download environmental data ("Envr_data") from Zenodo: link coming soon!
+  * Scroll down to "Files" -> "Download"
+  * Open Zip file and move to the common folder (where Range_shifts.py and Bio_data were downloaded)
+* Open Range_shifts.py
+  * Set directory to location with Python script (line 24)
+  * Write in species name (line 28) and set "all_sp" to False to run script for a specified species or set "all_sp" to True to run script for all species (line 29)
+  * Write in time period (line 32) as a string within quotes (e.g., "2035") and set "all_period" to False to run script for a specified time period or set "all_period" to True to run script for all time periods (line 33)
+  * Write in RCP scenario (line 36) and set "all_rcp" to False to run script for a specified RCP scenerio or set "all_rcp" to True to run script for all RCP scenarios (line 37)
+  * Run the script, suitability maps are saved in the "Suitability" folder and distribution range maps are saved in the "Range_maps" folder
+* Note that the "Suitability" TIFF files can be fairly large. After the model is run, it is safe to delete these files if desired.
 
 ## Environmental predictor variables
 * BIO10 - mean temperature of warmest quarter
