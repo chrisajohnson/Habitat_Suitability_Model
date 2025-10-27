@@ -9,7 +9,9 @@ This repository contains the data and scripts for generating a basic habitat sui
 * Suitability: habitat suitability maps for different species, time periods, and RCP scenarios
 
 ## To run
-* Download Range_shifts.py, Bio_data, and Envr_data into common folder
+* Download Range_shifts.py and Bio_data into common folder
+* Create folders "Suitability" and "Range_maps", these will initially be empty folders
+* Download environmental data ("Envr_data") for Zenodo: instructions coming soon!
 * Open Range_shifts.py and set directory to location with Python script (line 24)
 * Write in species name (line 28) and set "all_sp" to False to run script for a specified species or set "all_sp" to True to run script for all species (line 29)
 * Write in time period (line 32) as a string within quotes (e.g., "2035") and set "all_period" to False to run script for a specified time period or set "all_period" to True to run script for all time periods (line 33)
