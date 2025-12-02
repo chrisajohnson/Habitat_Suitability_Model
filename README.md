@@ -1,19 +1,19 @@
 # Habitat_Suitability_Model
 This repository contains the data and scripts for generating a basic habitat suitability model in Python for projecting plant range shifts under future climate change scenarios for teaching purposes
 
-## Folder Structure:
-* Bio_data: data files containing latitude and longitude for biodiversity data for six mountain plant species
-* Envr_data: environmental rasters for environmental different predictor variables, years, and Representative Concentration Pathways (RCP) scenarios
-* Range_maps: projected plant geographical ranges for different species, time periods, and RCP scenarios
-* Range_shifts.py: Python script for running the habitat suitability models
-* Suitability: habitat suitability maps for different species, time periods, and RCP scenarios
+## To run, please set up the following folders on your computer:
+* Bio_data: data files containing latitude and longitude for biodiversity data for six mountain plant species (from GitHub)
+* Envr_data: environmental rasters for environmental different predictor variables, years, and Representative Concentration Pathways (RCP) scenarios (from Zenodo)
+* Range_maps: projected plant geographical ranges for different species, time periods, and RCP scenarios (create empty folder)
+* Range_shifts.py: Python script for running the habitat suitability models (from GitHub)
+* Suitability: habitat suitability maps for different species, time periods, and RCP scenarios (create empty folder)
 
 ## To run
 * Download Range_shifts.py and Bio_data into a common folder
-* Create folders "Envr_data", "Suitability" and "Range_maps" in the comomon folder (with Range_shifts.py), these will initially be empty folders
+* Create folders "Envr_data", "Suitability" and "Range_maps" in the comomon folder (containing Range_shifts.py), these will initially be empty folders
 * Download environmental data from Zenodo: https://zenodo.org/records/17458011
   * Go to "Files" -> "Download all"
-  * Open the Zip file and move all files (ten BIO10 files, ten BIO18 files, aspect.tif, and slope.tif) into "Envr_data" (the BIO10 and BIO18 files must be directly in the "Envr_data" folder and not in the "BIO10" and "BIO18" folders)
+  * Open the Zip file and move all files (ten BIO10 files, ten BIO18 files, aspect.tif, and slope.tif) into "Envr_data" (note that the BIO10 and BIO18 files must be located directly in the "Envr_data" folder and not in the "BIO10" and "BIO18" folders used on Zenodo)
 * Open Range_shifts.py
   * Set directory to the location with Range_shifts.py (line 24)
   * Write in species name (line 28) and set "all_sp" to False to run the script for a specified species or set "all_sp" to True to run the script for all species (line 29)
